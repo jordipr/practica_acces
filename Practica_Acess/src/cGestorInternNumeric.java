@@ -29,13 +29,13 @@ public class cGestorInternNumeric {
 	
 	
 	
-	public void fInserirElement(int pPosicion,int pValor) {
+	public void fInserirElement(int pPosicio,int pElement) {
 		
 		
 		for (int i = 0; i < this.aElements.length; i++){
 		
 		     if(this.aElements[i] == -1) { 
-			this.aElements[pPosicion]=pValor;
+			this.aElements[pPosicio]=pElement;
 			
 			this.aMida++;
 			
@@ -45,11 +45,11 @@ public class cGestorInternNumeric {
 	
 	}
 	
-	public void fEliminarElement(int pPosicion) {
+	public void fEliminarElement(int pPosicio) {
 		for (int i = 0; i < this.aElements.length; i++){
 		if(this.aElements[i] != -1) {
 			
-			this.aElements[pPosicion] = -1;
+			this.aElements[pPosicio] = -1;
 			
 			this.aMida--;
 		}
@@ -57,13 +57,13 @@ public class cGestorInternNumeric {
 		}
 	}
 	
-	public void fConsultarElement( int pPosicion){
+	public void fConsultarElement( int pPosicio){
 		
 		
 			
 		for (int i = 0; i < this.aElements.length; i++){
 			
-			if(pPosicion == i) {
+			if(pPosicio == i) {
 			
 			System.out.println(this.aElements[i]);
 			
